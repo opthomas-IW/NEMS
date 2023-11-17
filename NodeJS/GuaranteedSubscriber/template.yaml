@@ -1,15 +1,13 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: docs-template
-  title: Documentation Template
-  description: Create a new standalone documentation project
+  name: nodejs-template
+  title: NodeJS - 
+  description: Create a new Solace NodeJS project
   tags:
     - recommended
-    - techdocs
-    - mkdocs
 spec:
-  owner: my-awesome-team
+  owner: OwenThomas
   type: documentation
 
   parameters:
