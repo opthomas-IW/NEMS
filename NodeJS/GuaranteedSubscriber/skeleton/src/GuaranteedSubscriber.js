@@ -229,7 +229,7 @@ var GuaranteedSubscriber = function (queueName) {
 
 var solace = require('solclientjs').debug; // logging supported
 var PropertiesReader = require('properties-reader');
-var properties = PropertiesReader('.\solace.properties');
+var properties = PropertiesReader('.//solace.properties');
 
 // Initialize factory with the most recent API defaults
 var factoryProps = new solace.SolclientFactoryProperties();
