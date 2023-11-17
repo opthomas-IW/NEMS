@@ -39,37 +39,31 @@ spec:
           type: string
           description: Queue name 
           ui:field: EntityNamePicker
-          ui:autofocus: true
         hosturl:
           title: HostURL 
           type: string
           description: Host URL 
           ui:field: EntityNamePicker
-          ui:autofocus: true
         usernamevpn:
           title: UserNameVPN
           type: string
           description: UserName VPN 
           ui:field: EntityNamePicker
-          ui:autofocus: true
         username:
           title: username
           type: string
           description: User Name 
           ui:field: EntityNamePicker
-          ui:autofocus: true
         vpn:
           title: vpn
           type: string
           description: VPN 
           ui:field: EntityNamePicker
-          ui:autofocus: true
         password:
           title: Password
           type: string
           description: password 
           ui:field: EntityNamePicker
-          ui:autofocus: true
  
     - title: Choose a location
       required:
@@ -87,16 +81,19 @@ spec:
   # By adding the following and fetching from an absolute URL you can
   # add in the docs template
   steps:
-    # - id: fetch
-    #   name: Template Docs Skeleton
-    #   action: fetch:template
-    #   input:
-    #     url: ./skeleton
-    #     values:
-    #       name: ${{ parameters.name }}
-    #       description: ${{ parameters.description }}
-    #       destination: ${{ parameters.repoUrl | parseRepoUrl }}
-    #       owner: ${{ parameters.owner }}
+    - id: fetch
+      name: NodeJS Skeleton
+      action: fetch:template
+      input:
+        url: ./skeleton
+        values:
+          name: ${{ parameters.name }}
+          description: ${{ parameters.description }}
+          queuename: {{ parameters.queuename }}
+          usernamevpn: {{ parameters.usernamevpn }}
+          username: {{ parameters.username }}
+          vpn: {{ parameters.vpn }}
+          password: {{ parameters.password }}
 
     - id: publish
       name: Publish
