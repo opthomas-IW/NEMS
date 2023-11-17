@@ -35,9 +35,39 @@ spec:
             allowedKinds:
               - Group
         queuename:
-          title: Queue Name
+          title: QueueName
           type: string
           description: Queue name 
+          ui:field: EntityNamePicker
+          ui:autofocus: true
+        hosturl:
+          title: HostURL 
+          type: string
+          description: Host URL 
+          ui:field: EntityNamePicker
+          ui:autofocus: true
+        usernamevpn:
+          title: UserNameVPN
+          type: string
+          description: UserName VPN 
+          ui:field: EntityNamePicker
+          ui:autofocus: true
+        username:
+          title: username
+          type: string
+          description: User Name 
+          ui:field: EntityNamePicker
+          ui:autofocus: true
+        vpn:
+          title: vpn
+          type: string
+          description: VPN 
+          ui:field: EntityNamePicker
+          ui:autofocus: true
+        password:
+          title: Password
+          type: string
+          description: password 
           ui:field: EntityNamePicker
           ui:autofocus: true
  
