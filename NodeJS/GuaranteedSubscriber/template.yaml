@@ -90,6 +90,7 @@ spec:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
           queuename: {{ parameters.queuename }}
+          hosturl: {{ parameters.hosturl }}
           usernamevpn: {{ parameters.usernamevpn }}
           username: {{ parameters.username }}
           vpn: {{ parameters.vpn }}
