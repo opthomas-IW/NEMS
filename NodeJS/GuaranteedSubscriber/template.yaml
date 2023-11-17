@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: nodejs-template
-  title: NodeJS - 
+  title: NodeJS - Solace scaffolder
   description: Create a new Solace NodeJS project
   tags:
     - recommended
