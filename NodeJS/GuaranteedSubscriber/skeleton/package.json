@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "properties-reader": "^2.3.0",
+    "solclientjs": "^10.0.0"
+  }  
 }
